@@ -32,5 +32,5 @@ build/
 ### VS Code ###
 .vscode/
 
-### Extra Stuff ###
-/application.properties
+### Config Files ###
+*.properties
