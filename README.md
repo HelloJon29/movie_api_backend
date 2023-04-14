@@ -14,3 +14,7 @@ spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
 
 spring.jpa.hibernate.ddl-auto=create
 ```
+
+# IMPORTANT: Reach out to me for access to the Constants.java file to run the project
+
+<jonkim1996@gmail.com>
