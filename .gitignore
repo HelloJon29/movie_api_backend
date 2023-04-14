@@ -34,3 +34,6 @@ build/
 
 ### Config Files ###
 *.properties
+
+### Constants ###
+src\main\java\com\jkim\api_call\ProjectConstants\Constants.java
