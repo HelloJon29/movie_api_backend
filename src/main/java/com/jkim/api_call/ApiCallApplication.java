@@ -8,6 +8,7 @@ public class ApiCallApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(ApiCallApplication.class, args);
+		System.out.println("Hello World");
 	}
 
 }
