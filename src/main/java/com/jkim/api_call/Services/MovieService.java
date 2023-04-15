@@ -7,7 +7,7 @@ import com.jkim.api_call.Entity.Movie;
 import com.jkim.api_call.ProjectConstants.Constants;
 
 @Service
-public class MovieService {
+public class MovieService implements MovieServiceInterface {
     private static final String API_URL = "http://www.omdbapi.com/";
     private String apiKey;
 
@@ -15,6 +15,7 @@ public class MovieService {
         this.apiKey = Constants.OMDB_API_KEY;
     }
 
+    @Override
     public Movie getMovieDetails(String imdbID) {
         String url = API_URL + "?i=" + imdbID + "&apikey=" + apiKey;
         RestTemplate restTemplate = new RestTemplate();
