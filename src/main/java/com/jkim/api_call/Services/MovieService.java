@@ -8,6 +8,7 @@ import com.jkim.api_call.ProjectConstants.Constants;
 
 @Service
 public class MovieService implements MovieServiceInterface {
+
     private static final String API_URL = "http://www.omdbapi.com/";
     private String apiKey;
 
@@ -36,4 +37,5 @@ public class MovieService implements MovieServiceInterface {
     public void setApiKey(String apiKey) {
         this.apiKey = apiKey;
     }
+
 }
