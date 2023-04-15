@@ -12,7 +12,7 @@ spring.datasource.username=your_username
 spring.datasource.password=your_pw
 spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
 
-spring.jpa.hibernate.ddl-auto=create
+spring.jpa.hibernate.ddl-auto=update
 ```
 
 # IMPORTANT: Reach out to me for access to the Constants.java file to run the project
