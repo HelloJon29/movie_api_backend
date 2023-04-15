@@ -264,4 +264,173 @@ public class Movie {
                 + response + "]";
     }
 
+    @Override
+    public int hashCode() {
+        final int prime = 31;
+        int result = 1;
+        result = prime * result + ((title == null) ? 0 : title.hashCode());
+        result = prime * result + ((year == null) ? 0 : year.hashCode());
+        result = prime * result + ((rated == null) ? 0 : rated.hashCode());
+        result = prime * result + ((released == null) ? 0 : released.hashCode());
+        result = prime * result + ((runtime == null) ? 0 : runtime.hashCode());
+        result = prime * result + ((genre == null) ? 0 : genre.hashCode());
+        result = prime * result + ((director == null) ? 0 : director.hashCode());
+        result = prime * result + ((writer == null) ? 0 : writer.hashCode());
+        result = prime * result + ((actors == null) ? 0 : actors.hashCode());
+        result = prime * result + ((plot == null) ? 0 : plot.hashCode());
+        result = prime * result + ((language == null) ? 0 : language.hashCode());
+        result = prime * result + ((country == null) ? 0 : country.hashCode());
+        result = prime * result + ((awards == null) ? 0 : awards.hashCode());
+        result = prime * result + ((poster == null) ? 0 : poster.hashCode());
+        result = prime * result + ((ratings == null) ? 0 : ratings.hashCode());
+        result = prime * result + ((metascore == null) ? 0 : metascore.hashCode());
+        result = prime * result + ((imdbRating == null) ? 0 : imdbRating.hashCode());
+        result = prime * result + ((imdbVotes == null) ? 0 : imdbVotes.hashCode());
+        result = prime * result + ((imdbID == null) ? 0 : imdbID.hashCode());
+        result = prime * result + ((type == null) ? 0 : type.hashCode());
+        result = prime * result + ((dvd == null) ? 0 : dvd.hashCode());
+        result = prime * result + ((boxOffice == null) ? 0 : boxOffice.hashCode());
+        result = prime * result + ((production == null) ? 0 : production.hashCode());
+        result = prime * result + ((website == null) ? 0 : website.hashCode());
+        result = prime * result + ((response == null) ? 0 : response.hashCode());
+        return result;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (obj == null)
+            return false;
+        if (getClass() != obj.getClass())
+            return false;
+        Movie other = (Movie) obj;
+        if (title == null) {
+            if (other.title != null)
+                return false;
+        } else if (!title.equals(other.title))
+            return false;
+        if (year == null) {
+            if (other.year != null)
+                return false;
+        } else if (!year.equals(other.year))
+            return false;
+        if (rated == null) {
+            if (other.rated != null)
+                return false;
+        } else if (!rated.equals(other.rated))
+            return false;
+        if (released == null) {
+            if (other.released != null)
+                return false;
+        } else if (!released.equals(other.released))
+            return false;
+        if (runtime == null) {
+            if (other.runtime != null)
+                return false;
+        } else if (!runtime.equals(other.runtime))
+            return false;
+        if (genre == null) {
+            if (other.genre != null)
+                return false;
+        } else if (!genre.equals(other.genre))
+            return false;
+        if (director == null) {
+            if (other.director != null)
+                return false;
+        } else if (!director.equals(other.director))
+            return false;
+        if (writer == null) {
+            if (other.writer != null)
+                return false;
+        } else if (!writer.equals(other.writer))
+            return false;
+        if (actors == null) {
+            if (other.actors != null)
+                return false;
+        } else if (!actors.equals(other.actors))
+            return false;
+        if (plot == null) {
+            if (other.plot != null)
+                return false;
+        } else if (!plot.equals(other.plot))
+            return false;
+        if (language == null) {
+            if (other.language != null)
+                return false;
+        } else if (!language.equals(other.language))
+            return false;
+        if (country == null) {
+            if (other.country != null)
+                return false;
+        } else if (!country.equals(other.country))
+            return false;
+        if (awards == null) {
+            if (other.awards != null)
+                return false;
+        } else if (!awards.equals(other.awards))
+            return false;
+        if (poster == null) {
+            if (other.poster != null)
+                return false;
+        } else if (!poster.equals(other.poster))
+            return false;
+        if (ratings == null) {
+            if (other.ratings != null)
+                return false;
+        } else if (!ratings.equals(other.ratings))
+            return false;
+        if (metascore == null) {
+            if (other.metascore != null)
+                return false;
+        } else if (!metascore.equals(other.metascore))
+            return false;
+        if (imdbRating == null) {
+            if (other.imdbRating != null)
+                return false;
+        } else if (!imdbRating.equals(other.imdbRating))
+            return false;
+        if (imdbVotes == null) {
+            if (other.imdbVotes != null)
+                return false;
+        } else if (!imdbVotes.equals(other.imdbVotes))
+            return false;
+        if (imdbID == null) {
+            if (other.imdbID != null)
+                return false;
+        } else if (!imdbID.equals(other.imdbID))
+            return false;
+        if (type == null) {
+            if (other.type != null)
+                return false;
+        } else if (!type.equals(other.type))
+            return false;
+        if (dvd == null) {
+            if (other.dvd != null)
+                return false;
+        } else if (!dvd.equals(other.dvd))
+            return false;
+        if (boxOffice == null) {
+            if (other.boxOffice != null)
+                return false;
+        } else if (!boxOffice.equals(other.boxOffice))
+            return false;
+        if (production == null) {
+            if (other.production != null)
+                return false;
+        } else if (!production.equals(other.production))
+            return false;
+        if (website == null) {
+            if (other.website != null)
+                return false;
+        } else if (!website.equals(other.website))
+            return false;
+        if (response == null) {
+            if (other.response != null)
+                return false;
+        } else if (!response.equals(other.response))
+            return false;
+        return true;
+    }
+
 }
