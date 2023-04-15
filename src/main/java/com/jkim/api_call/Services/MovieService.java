@@ -24,4 +24,16 @@ public class MovieService implements MovieServiceInterface {
 
         return movie;
     }
+
+    public static String getApiUrl() {
+        return API_URL;
+    }
+
+    public String getApiKey() {
+        return apiKey;
+    }
+
+    public void setApiKey(String apiKey) {
+        this.apiKey = apiKey;
+    }
 }
