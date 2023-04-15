@@ -2,9 +2,18 @@ package com.jkim.api_call.Entity;
 
 import java.util.List;
 
+import org.springframework.data.annotation.Id;
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+import jakarta.persistence.*;
+
+@Entity
+@Table(name = "movies")
 public class Movie {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
     @JsonProperty("Title")
     private String title;
     @JsonProperty("Year")
@@ -39,6 +48,7 @@ public class Movie {
     private String metascore;
     private String imdbRating;
     private String imdbVotes;
+    @Column(name = "imdb_id")
     private String imdbID;
     @JsonProperty("Type")
     private String type;
